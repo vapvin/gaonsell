@@ -51,6 +51,41 @@
         repeat: 1,
         yoyo: true
     });
+    var tween7 = TweenMax.fromTo('#section-hidden04', 1.52, {
+        opacity: 0,
+    },{
+        opacity: 1,
+        repeat: 1,
+        yoyo: true
+    });
+
+    var tween8 = TweenMax.to('#big-circle', 0.52, {
+        scale: 0.4,
+        rotation: 360
+    });
+    var tween9 = TweenMax.to('#section-hidden05', 2.52, {
+        opacity: 1,
+    });
+
+    var tween10 = TweenMax.to('#big-circle2', 0.52, {
+        rotation: 360
+    });
+
+    var tween11 = TweenMax.fromTo('#mid-text', 0.52, {
+        opacity:0,
+    },{
+        opacity: 1,
+        repeat: 1,
+        yoyo: true
+    });
+
+    var tween12 = TweenMax.to('#section-hidden06', 0.52, {
+        opacity: 1
+    });
+    var tween13 = TweenMax.to('#finished', 0.52, {
+        y: "-100vh",
+    });
+
 
     var scene1 = new ScrollMagic.Scene({
         triggerElement: "#trigger1"
@@ -105,6 +140,73 @@
         .addTo(controller)
         .addIndicators({
             name: "6"
+        });
+    var scene7 = new ScrollMagic.Scene({
+        triggerElement: "#trigger7"
+    })
+        .setTween(tween7)
+        .addTo(controller)
+        .addIndicators({
+            name: "7"
+        });
+    var scene8 = new ScrollMagic.Scene({
+        triggerElement: "#trigger8"
+    })
+        .setTween(tween8)
+        .addTo(controller)
+        .addIndicators({
+            name: "8"
+        });
+    var scene9 = new ScrollMagic.Scene({
+        triggerElement: "#trigger9",
+        offset: -50,
+        duration: 1200
+    })
+        .setTween(tween9)
+        .addTo(controller)
+        .addIndicators({
+            name: "9"
+        });
+
+    var scene10 = new ScrollMagic.Scene({
+        triggerElement: "#trigger10",
+        offset: -50,
+        duration: 1200
+    })
+        .setTween(tween10)
+        .addTo(controller)
+        .addIndicators({
+            name: "10"
+        });
+
+    var scene11 = new ScrollMagic.Scene({
+        triggerElement: "#trigger11",
+        offset: -250,
+        duration: 300
+    })
+        .setTween(tween11)
+        .addTo(controller)
+        .addIndicators({
+            name: "11"
+        });
+
+    var scene12 = new ScrollMagic.Scene({
+        triggerElement: "#trigger12",
+        offset: 150,
+        duration: 300
+    })
+        .setTween(tween12)
+        .addTo(controller)
+        .addIndicators({
+            name: "12"
+        });
+    var scene14 = new ScrollMagic.Scene({
+        triggerElement: "#trigger13",
+    })
+        .setTween(tween13)
+        .addTo(controller)
+        .addIndicators({
+            name: "13"
         });
 }())
 var human01 = document.getElementById("human01"),
