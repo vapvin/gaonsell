@@ -83,7 +83,7 @@
         opacity: 1
     });
     var tween13 = TweenMax.to('#finished', 0.52, {
-        y: "-100vh",
+        y: "-200vh",
     });
 
 
