@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import "reset.css";
+
+.wrap {
+    width: 100%;
+    height: auto;
+    padding-top: 900vh;
+}
+
+.scroll-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bgimg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-section .first-effect {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.first-effect-tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-size: 77px;
+    color: white;
+}
+
+.main-02 {
+    width: 100%;
+    height: 100vh;
+}
+
+.trigger {
+    position: absolute;
+    right: 0;
+}
+
+#trigger1 {
+
+    top: 80vh;
+
+}
+
+#trigger2 {
+    top: 120vh;
+}
+
+#trigger3 {
+    top: 160vh;
+}
+
+#trigger4 {
+    top: 200vh;
+}
