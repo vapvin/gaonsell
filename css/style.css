@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .scroll-section .first-effect {
@@ -65,4 +66,117 @@
 
 #trigger4 {
     top: 200vh;
+}
+#trigger5 {
+    top: 260vh;
+}
+#trigger6 {
+    top: 300vh;
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollicon 0.4s infinite alternate;
+}
+
+@keyframes scrollicon {
+    0% {
+        transform: translate(-50%,0);
+    }
+    100%{
+        transform: translate(-50%,-25px);
+    }
+}
+
+.sec-effect {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.sec-effect h2 {
+    font-size: 77px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.energy, .evolu {
+    display: inline-block;
+    position: relative;
+}
+.energy {
+    color: #2eeeff;
+}
+
+.evolu {
+    color: #f15e3e;
+}
+
+.energy:after, .evolu:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 101%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.energy:after {
+    background: #2eeeff;
+}
+.evolu:after {
+    background: #f15e3e;
+}
+
+.sec-effect h2 img {
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    transform: translateX(-47%);
+    z-index: -1;
+}
+.third-effect {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.third-effect  h2 {
+    font-size: 77px;
+    color: white;
+    text-align: center;
+}
+
+.circle-first {
+    display: inline-block;
+    position: relative;
+}
+
+.circle-first:after {
+    display: block;
+    width: 200%;
+    height: 200%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-12%,-23%);
+    background: url("../img/light02.png") no-repeat;
+    z-index: -1;
 }

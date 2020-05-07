@@ -36,6 +36,22 @@
         opacity: 0,
     });
 
+    var tween5 = TweenMax.fromTo('#section-hidden02', 0.52, {
+        opacity: 0,
+    },{
+        opacity: 1,
+        repeat: 1,
+        yoyo: true
+    });
+
+    var tween6 = TweenMax.fromTo('#section-hidden03', 0.52, {
+        opacity: 0,
+    },{
+        opacity: 1,
+        repeat: 1,
+        yoyo: true
+    });
+
     var scene1 = new ScrollMagic.Scene({
         triggerElement: "#trigger1"
 
@@ -72,6 +88,23 @@
         .addTo(controller)
         .addIndicators({
             name: "4"
+        });
+
+    var scene5 = new ScrollMagic.Scene({
+        triggerElement: "#trigger5"
+    })
+        .setTween(tween5)
+        .addTo(controller)
+        .addIndicators({
+            name: "5"
+        });
+    var scene6 = new ScrollMagic.Scene({
+        triggerElement: "#trigger6"
+    })
+        .setTween(tween6)
+        .addTo(controller)
+        .addIndicators({
+            name: "6"
         });
 }())
 var human01 = document.getElementById("human01"),
