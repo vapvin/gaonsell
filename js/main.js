@@ -11,7 +11,7 @@
     var tween1 = TweenMax.fromTo('#human01', 0.6, {
         scale: 1,
     },{
-        scale: 1.8,
+        scale: 1.6,
         repeat: 1,
         yoyo: true
     });
@@ -19,7 +19,7 @@
     var tween2 = TweenMax.fromTo('#human02', 0.6, {
         scale: 1,
     },{
-        scale: 1.8,
+        scale: 1.6,
         repeat: 1,
         yoyo: true
     });
@@ -27,7 +27,7 @@
     var tween3 = TweenMax.fromTo('#human03', 0.6, {
         scale: 1,
     },{
-        scale: 1.8,
+        scale: 1.6,
         repeat: 1,
         yoyo: true
     });
