@@ -181,7 +181,6 @@
 
     var scene11 = new ScrollMagic.Scene({
         triggerElement: "#trigger11",
-        offset: -250,
         duration: 300
     })
         .setTween(tween11)
@@ -192,7 +191,7 @@
 
     var scene12 = new ScrollMagic.Scene({
         triggerElement: "#trigger12",
-        offset: 150,
+        offset: 500,
         duration: 300
     })
         .setTween(tween12)
@@ -202,6 +201,7 @@
         });
     var scene14 = new ScrollMagic.Scene({
         triggerElement: "#trigger13",
+        offset: 500,
     })
         .setTween(tween13)
         .addTo(controller)
